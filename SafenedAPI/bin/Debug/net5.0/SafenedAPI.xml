@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SafenedAPI</name>
+    </assembly>
+    <members>
+        <member name="M:SafenedAPI.Controllers.BankAccountController.GetAccountList(System.Guid)">
+            <summary>
+            Action to get bank accounts list of specific user.
+            </summary>
+            <param name="id">Model to user id</param>
+            <returns>Returns the lists of bank accounts</returns>
+            <response code="200">Returned if there is any bank account of user</response>
+            <response code="404">Returned if there is no bank account</response>
+        </member>
+        <member name="M:SafenedAPI.Controllers.BankAccountController.Delete(System.Guid)">
+            <summary>
+            Action to delete bank account.
+            </summary>
+            <param name="id">Model to bank account id </param>
+            <returns>Returns the boolean result of login</returns>
+            <response code="204">Returned if the delete was successful</response>
+            <response code="400">Returned if there is no bank account with that id</response>
+        </member>
+        <member name="M:SafenedAPI.Controllers.TransactionController.Deposit(SafenedAPI.Models.TransactionModel)">
+            <summary>
+            Action to deposit.
+            </summary>
+            <param name="id">Model to deposit</param>
+            <returns>Returns the lists of bank accounts</returns>
+            <response code="201">Returned if deposit was successful</response>
+            <response code="400">Returned if any error occurs</response>
+        </member>
+        <member name="M:SafenedAPI.Controllers.TransactionController.Withdraw(SafenedAPI.Models.TransactionModel)">
+            <summary>
+            Action to withdraw.
+            </summary>
+            <param name="id">Model to withdraw</param>
+            <returns>Returns the lists of bank accounts</returns>
+            <response code="201">Returned if withdraw was successful</response>
+            <response code="400">Returned if any error occurs</response>
+        </member>
+        <member name="M:SafenedAPI.Controllers.UserController.#ctor(SafenedAPI.Service.IUserService)">
+            <summary>
+            The constructor
+            </summary>
+            <param name="userService"></param>
+        </member>
+        <member name="M:SafenedAPI.Controllers.UserController.Login(SafenedAPI.Models.LoginModel)">
+            <summary>
+            Action to login with username and password.
+            </summary>
+            <param name="LoginModel">Model to login with username and password</param>
+            <returns>Returns the boolean result of login</returns>
+            <response code="200">Returned if the login was successful</response>
+            <response code="400">Returned if the model couldn't be parsed or the login was not made</response>
+            <response code="422">Returned when the validation failed</response>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,17 @@
+C:\Projects\SafenedAPI\SafenedAPI.Service\bin\Debug\net5.0\SafenedAPI.Service.deps.json
+C:\Projects\SafenedAPI\SafenedAPI.Service\bin\Debug\net5.0\SafenedAPI.Service.dll
+C:\Projects\SafenedAPI\SafenedAPI.Service\bin\Debug\net5.0\ref\SafenedAPI.Service.dll
+C:\Projects\SafenedAPI\SafenedAPI.Service\bin\Debug\net5.0\SafenedAPI.Service.pdb
+C:\Projects\SafenedAPI\SafenedAPI.Service\bin\Debug\net5.0\SafenedAPI.Data.dll
+C:\Projects\SafenedAPI\SafenedAPI.Service\bin\Debug\net5.0\SafenedAPI.Domain.dll
+C:\Projects\SafenedAPI\SafenedAPI.Service\bin\Debug\net5.0\SafenedAPI.Data.pdb
+C:\Projects\SafenedAPI\SafenedAPI.Service\bin\Debug\net5.0\SafenedAPI.Domain.pdb
+C:\Projects\SafenedAPI\SafenedAPI.Service\obj\Debug\net5.0\SafenedAPI.Service.csprojAssemblyReference.cache
+C:\Projects\SafenedAPI\SafenedAPI.Service\obj\Debug\net5.0\SafenedAPI.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\SafenedAPI\SafenedAPI.Service\obj\Debug\net5.0\SafenedAPI.Service.AssemblyInfoInputs.cache
+C:\Projects\SafenedAPI\SafenedAPI.Service\obj\Debug\net5.0\SafenedAPI.Service.AssemblyInfo.cs
+C:\Projects\SafenedAPI\SafenedAPI.Service\obj\Debug\net5.0\SafenedAPI.Service.csproj.CoreCompileInputs.cache
+C:\Projects\SafenedAPI\SafenedAPI.Service\obj\Debug\net5.0\SafenedAPI.Service.csproj.CopyComplete
+C:\Projects\SafenedAPI\SafenedAPI.Service\obj\Debug\net5.0\SafenedAPI.Service.dll
+C:\Projects\SafenedAPI\SafenedAPI.Service\obj\Debug\net5.0\ref\SafenedAPI.Service.dll
+C:\Projects\SafenedAPI\SafenedAPI.Service\obj\Debug\net5.0\SafenedAPI.Service.pdb

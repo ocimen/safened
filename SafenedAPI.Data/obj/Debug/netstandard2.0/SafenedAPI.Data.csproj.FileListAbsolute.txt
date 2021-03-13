@@ -1,0 +1,4 @@
+C:\Projects\SafenedAPI\SafenedAPI.Data\obj\Debug\netstandard2.0\SafenedAPI.Data.csprojAssemblyReference.cache
+C:\Projects\SafenedAPI\SafenedAPI.Data\obj\Debug\netstandard2.0\SafenedAPI.Data.AssemblyInfoInputs.cache
+C:\Projects\SafenedAPI\SafenedAPI.Data\obj\Debug\netstandard2.0\SafenedAPI.Data.AssemblyInfo.cs
+C:\Projects\SafenedAPI\SafenedAPI.Data\obj\Debug\netstandard2.0\SafenedAPI.Data.csproj.CoreCompileInputs.cache

@@ -1,0 +1,9 @@
+C:\Projects\SafenedAPI\SafenedAPI.Domain\bin\Debug\netstandard2.0\SafenedAPI.Domain.deps.json
+C:\Projects\SafenedAPI\SafenedAPI.Domain\bin\Debug\netstandard2.0\SafenedAPI.Domain.dll
+C:\Projects\SafenedAPI\SafenedAPI.Domain\bin\Debug\netstandard2.0\SafenedAPI.Domain.pdb
+C:\Projects\SafenedAPI\SafenedAPI.Domain\obj\Debug\netstandard2.0\SafenedAPI.Domain.csprojAssemblyReference.cache
+C:\Projects\SafenedAPI\SafenedAPI.Domain\obj\Debug\netstandard2.0\SafenedAPI.Domain.AssemblyInfoInputs.cache
+C:\Projects\SafenedAPI\SafenedAPI.Domain\obj\Debug\netstandard2.0\SafenedAPI.Domain.AssemblyInfo.cs
+C:\Projects\SafenedAPI\SafenedAPI.Domain\obj\Debug\netstandard2.0\SafenedAPI.Domain.csproj.CoreCompileInputs.cache
+C:\Projects\SafenedAPI\SafenedAPI.Domain\obj\Debug\netstandard2.0\SafenedAPI.Domain.dll
+C:\Projects\SafenedAPI\SafenedAPI.Domain\obj\Debug\netstandard2.0\SafenedAPI.Domain.pdb
