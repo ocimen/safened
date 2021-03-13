@@ -35,8 +35,10 @@ namespace SafenedAPI
             services.AddDbContext<SafenedContext>(
                 s => s.UseInMemoryDatabase("SafenedDb").UseQueryTrackingBehavior(QueryTrackingBehavior.TrackAll),
                 ServiceLifetime.Singleton);
-            services.AddControllers();
-            services.AddMvc().AddFluentValidation();
+            services.AddControllers().AddFluentValidation(x =>
+            {
+                x.RegisterValidatorsFromAssembly(typeof(Startup).Assembly);
+            });
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "SafenedAPI", Version = "v1" });

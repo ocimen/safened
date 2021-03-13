@@ -23,7 +23,7 @@ namespace SafenedAPI.Controllers
         /// <summary>
         /// Action to deposit.
         /// </summary>
-        /// <param name="id">Model to deposit</param>
+        /// <param name="model">Model to deposit</param>
         /// <returns>Returns the lists of bank accounts</returns>
         /// <response code="201">Returned if deposit was successful</response>
         /// <response code="400">Returned if any error occurs</response>
@@ -32,7 +32,7 @@ namespace SafenedAPI.Controllers
         [HttpPost("deposit")]
         public ActionResult Deposit(TransactionModel model)
         {
-            var result = transactionService.Deposit(model.senderId, model.receiverId, model.Amount);
+            var result = transactionService.Deposit(model.SenderId, model.ReceiverId, model.Amount);
             if (result)
             {
                 // If transaction table will be added to this scenario returning 201 is more suitable 
@@ -45,7 +45,7 @@ namespace SafenedAPI.Controllers
         /// <summary>
         /// Action to withdraw.
         /// </summary>
-        /// <param name="id">Model to withdraw</param>
+        /// <param name="model">Model to withdraw</param>
         /// <returns>Returns the lists of bank accounts</returns>
         /// <response code="201">Returned if withdraw was successful</response>
         /// <response code="400">Returned if any error occurs</response>
@@ -54,7 +54,7 @@ namespace SafenedAPI.Controllers
         [HttpPost("withdraw")]
         public ActionResult Withdraw(TransactionModel model)
         {
-            var result = transactionService.Withdraw(model.senderId, model.receiverId, model.Amount);
+            var result = transactionService.Withdraw(model.SenderId, model.ReceiverId, model.Amount);
             if (result)
             {
                 // If transaction table will be added to this scenario returning 201 is more suitable 

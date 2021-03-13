@@ -27,12 +27,12 @@ namespace SafenedAPI.Controllers
         /// <summary>
         /// Action to login with username and password.
         /// </summary>
-        /// <param name="LoginModel">Model to login with username and password</param>
+        /// <param name="model">Model to login with username and password</param>
         /// <returns>Returns the boolean result of login</returns>
         /// <response code="200">Returned if the login was successful</response>
         /// <response code="400">Returned if the model couldn't be parsed or the login was not made</response>
         /// <response code="422">Returned when the validation failed</response>
-        [HttpPost]
+        [HttpPost("login")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public ActionResult Login(LoginModel model)
