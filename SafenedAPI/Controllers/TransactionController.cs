@@ -27,10 +27,9 @@ namespace SafenedAPI.Controllers
         /// <returns>Returns the lists of bank accounts</returns>
         /// <response code="201">Returned if deposit was successful</response>
         /// <response code="400">Returned if any error occurs</response>
-        [HttpGet("user/{id:guid}")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [HttpPost]
+        [HttpPost("deposit")]
         public ActionResult Deposit(TransactionModel model)
         {
             var result = transactionService.Deposit(model.senderId, model.receiverId, model.Amount);
@@ -50,10 +49,9 @@ namespace SafenedAPI.Controllers
         /// <returns>Returns the lists of bank accounts</returns>
         /// <response code="201">Returned if withdraw was successful</response>
         /// <response code="400">Returned if any error occurs</response>
-        [HttpGet("user/{id:guid}")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [HttpPost]
+        [HttpPost("withdraw")]
         public ActionResult Withdraw(TransactionModel model)
         {
             var result = transactionService.Withdraw(model.senderId, model.receiverId, model.Amount);

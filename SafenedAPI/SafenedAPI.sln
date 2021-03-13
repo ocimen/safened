@@ -3,15 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafenedAPI", "SafenedAPI.csproj", "{004DEE49-510F-42E2-8F9C-51A92A4EE8D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SafenedAPI", "SafenedAPI.csproj", "{004DEE49-510F-42E2-8F9C-51A92A4EE8D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafenedAPI.Domain", "..\SafenedAPI.Domain\SafenedAPI.Domain.csproj", "{23315937-102C-419E-B580-8BE94090EE37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SafenedAPI.Domain", "..\SafenedAPI.Domain\SafenedAPI.Domain.csproj", "{23315937-102C-419E-B580-8BE94090EE37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafenedAPI.Data", "..\SafenedAPI.Data\SafenedAPI.Data.csproj", "{0A82EA05-658E-4CBA-B1F6-488F288E8517}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SafenedAPI.Data", "..\SafenedAPI.Data\SafenedAPI.Data.csproj", "{0A82EA05-658E-4CBA-B1F6-488F288E8517}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafenedAPI.Service", "..\SafenedAPI.Service\SafenedAPI.Service.csproj", "{118833F4-FCA6-4100-8D3D-2A438F083D50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SafenedAPI.Service", "..\SafenedAPI.Service\SafenedAPI.Service.csproj", "{118833F4-FCA6-4100-8D3D-2A438F083D50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafenedAPI.Service.UnitTests", "..\SafenedAPI.Service.UnitTests\SafenedAPI.Service.UnitTests.csproj", "{2727D071-F858-47C4-B765-0EA41735E3BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SafenedAPI.Service.UnitTests", "..\SafenedAPI.Service.UnitTests\SafenedAPI.Service.UnitTests.csproj", "{2727D071-F858-47C4-B765-0EA41735E3BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D4005629-BEEF-4CAF-9726-5493E0E704E1}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
