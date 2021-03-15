@@ -13,11 +13,6 @@ namespace SafenedAPI.Data.Repository
         {
         }
 
-        public BankAccount GetById(Guid id)
-        {
-            return SafenedContext.BankAccount.FirstOrDefault(a => a.Id == id);
-        }
-
         public List<BankAccount> GetBankAccountListByUser(Guid userId)
         {
             var accountList = SafenedContext.BankAccount.Where(a => a.UserId == userId).ToList();

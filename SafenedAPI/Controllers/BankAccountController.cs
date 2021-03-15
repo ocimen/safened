@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using SafenedAPI.Domain;
+using SafenedAPI.Models;
 using SafenedAPI.Service;
 
 namespace SafenedAPI.Controllers
@@ -18,6 +19,26 @@ namespace SafenedAPI.Controllers
         public BankAccountController(IBankAccountService bankAccountService)
         {
             this.bankAccountService = bankAccountService;
+        }
+
+        /// <summary>
+        /// Action to create new bank account.
+        /// </summary>
+        /// <param name="model">Model to create bank account</param>
+        /// <returns>Returns created bank account</returns>
+        /// <response code="201">Returned if bank account was created</response>
+        /// <response code="404">Returned if bank account was not created</response>
+        [HttpPost]
+        public async Task<ActionResult> Post(CreateBankAccountModel model)
+        {
+            var bankAccount = await bankAccountService.CreateAccount(model.UserId, model.BankId, model.Balance);
+            if (bankAccount)
+            {
+                // TODO: return created entity id
+                return StatusCode(201);
+            }
+
+            return BadRequest();
         }
 
         /// <summary>

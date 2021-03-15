@@ -51,6 +51,7 @@ namespace SafenedAPI
             services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IBankAccountRepository, BankAccountRepository>();
+            services.AddTransient<IBankRepository, BankRepository>();
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IBankAccountService, BankAccountService>();
             services.AddTransient<ITransactionService, TransactionService>();

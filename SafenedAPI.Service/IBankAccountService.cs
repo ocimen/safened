@@ -9,6 +9,8 @@ namespace SafenedAPI.Service
 {
     public interface IBankAccountService
     {
+        Task<bool> CreateAccount(Guid userId, Guid bankId, decimal balance);
+
         List<BankAccount> GetBankAccountListByUser(Guid userId);
 
         bool Delete(Guid id);

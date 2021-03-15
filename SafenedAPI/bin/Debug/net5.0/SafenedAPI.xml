@@ -4,6 +4,15 @@
         <name>SafenedAPI</name>
     </assembly>
     <members>
+        <member name="M:SafenedAPI.Controllers.BankAccountController.Post(SafenedAPI.Models.CreateBankAccountModel)">
+            <summary>
+            Action to create new bank account.
+            </summary>
+            <param name="model">Model to create bank account</param>
+            <returns>Returns created bank account</returns>
+            <response code="201">Returned if bank account was created</response>
+            <response code="404">Returned if bank account was not created</response>
+        </member>
         <member name="M:SafenedAPI.Controllers.BankAccountController.GetAccountList(System.Guid)">
             <summary>
             Action to get bank accounts list of specific user.
@@ -26,7 +35,7 @@
             <summary>
             Action to deposit.
             </summary>
-            <param name="id">Model to deposit</param>
+            <param name="model">Model to deposit</param>
             <returns>Returns the lists of bank accounts</returns>
             <response code="201">Returned if deposit was successful</response>
             <response code="400">Returned if any error occurs</response>
@@ -35,7 +44,7 @@
             <summary>
             Action to withdraw.
             </summary>
-            <param name="id">Model to withdraw</param>
+            <param name="model">Model to withdraw</param>
             <returns>Returns the lists of bank accounts</returns>
             <response code="201">Returned if withdraw was successful</response>
             <response code="400">Returned if any error occurs</response>
@@ -50,11 +59,10 @@
             <summary>
             Action to login with username and password.
             </summary>
-            <param name="LoginModel">Model to login with username and password</param>
+            <param name="model">Model to login with username and password</param>
             <returns>Returns the boolean result of login</returns>
             <response code="200">Returned if the login was successful</response>
             <response code="400">Returned if the model couldn't be parsed or the login was not made</response>
-            <response code="422">Returned when the validation failed</response>
         </member>
     </members>
 </doc>

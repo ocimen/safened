@@ -2,16 +2,22 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using SafenedAPI.Domain;
 
 namespace SafenedAPI.Data.Repository
 {
-    public class Repository<TEntity> : IRepository<TEntity> where TEntity : class, new()
+    public class Repository<TEntity> : IRepository<TEntity> where TEntity : BaseEntity, new()
     {
         protected readonly SafenedContext SafenedContext;
 
         public Repository(SafenedContext safenedContext)
         {
             SafenedContext = safenedContext;
+        }
+
+        public TEntity GetById(Guid id)
+        {
+            return SafenedContext.Set<TEntity>().FirstOrDefault(f => f.Id == id);
         }
 
         public IEnumerable<TEntity> GetAll()

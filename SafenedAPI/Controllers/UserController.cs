@@ -31,7 +31,6 @@ namespace SafenedAPI.Controllers
         /// <returns>Returns the boolean result of login</returns>
         /// <response code="200">Returned if the login was successful</response>
         /// <response code="400">Returned if the model couldn't be parsed or the login was not made</response>
-        /// <response code="422">Returned when the validation failed</response>
         [HttpPost("login")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
