@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AutoMapper;
 using SafenedAPI.Data.Repository;
 using SafenedAPI.Domain;
+using SafenedAPI.Service.Models;
 
 namespace SafenedAPI.Service
 {
@@ -12,11 +14,13 @@ namespace SafenedAPI.Service
     {
         private readonly IBankAccountRepository bankAccountRepository;
         private readonly IBankRepository bankRepository;
+        private readonly IMapper _mapper;
 
-        public BankAccountService(IBankAccountRepository bankAccountRepository, IBankRepository bankRepository)
+        public BankAccountService(IBankAccountRepository bankAccountRepository, IBankRepository bankRepository, IMapper mapper)
         {
             this.bankAccountRepository = bankAccountRepository;
             this.bankRepository = bankRepository;
+            _mapper = mapper;
         }
 
         public async Task<bool> CreateAccount(Guid userId, Guid bankId, decimal balance)
@@ -38,11 +42,16 @@ namespace SafenedAPI.Service
             return false;
         }
 
-        public List<BankAccount> GetBankAccountListByUser(Guid userId)
+        public List<BankAccountModel> GetBankAccountListByUser(Guid userId)
         {
             //TODO: Add automapper to return dto instead of domain object
             var bankAccountList = bankAccountRepository.GetBankAccountListByUser(userId);
-            return bankAccountList;
+            return bankAccountList.Select(s => new BankAccountModel
+            {
+                AccountOwner = $"{s.User.FirstName} {s.User.LastName}",
+                Balance = s.Balance,
+                BankName = s.Bank.Name
+            }).ToList();
         }
 
         public bool Delete(Guid id)

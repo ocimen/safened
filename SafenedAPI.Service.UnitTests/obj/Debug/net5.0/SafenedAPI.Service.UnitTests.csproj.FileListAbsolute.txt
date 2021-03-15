@@ -124,3 +124,5 @@ C:\Projects\SafenedAPI\SafenedAPI.Service.UnitTests\obj\Debug\net5.0\SafenedAPI.
 C:\Projects\SafenedAPI\SafenedAPI.Service.UnitTests\bin\Debug\net5.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 C:\Projects\SafenedAPI\SafenedAPI.Service.UnitTests\bin\Debug\net5.0\xunit.runner.reporters.netcoreapp10.dll
 C:\Projects\SafenedAPI\SafenedAPI.Service.UnitTests\bin\Debug\net5.0\xunit.runner.utility.netcoreapp10.dll
+C:\Projects\SafenedAPI\SafenedAPI.Service.UnitTests\bin\Debug\net5.0\AutoMapper.dll
+C:\Projects\SafenedAPI\SafenedAPI.Service.UnitTests\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

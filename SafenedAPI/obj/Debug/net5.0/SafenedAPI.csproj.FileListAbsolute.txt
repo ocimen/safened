@@ -43,3 +43,5 @@ C:\Projects\SafenedAPI\SafenedAPI\obj\Debug\net5.0\SafenedAPI.dll
 C:\Projects\SafenedAPI\SafenedAPI\obj\Debug\net5.0\ref\SafenedAPI.dll
 C:\Projects\SafenedAPI\SafenedAPI\obj\Debug\net5.0\SafenedAPI.pdb
 C:\Projects\SafenedAPI\SafenedAPI\obj\Debug\net5.0\SafenedAPI.genruntimeconfig.cache
+C:\Projects\SafenedAPI\SafenedAPI\bin\Debug\net5.0\AutoMapper.dll
+C:\Projects\SafenedAPI\SafenedAPI\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

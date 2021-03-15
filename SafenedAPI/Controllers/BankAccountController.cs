@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using SafenedAPI.Domain;
 using SafenedAPI.Models;
 using SafenedAPI.Service;
+using SafenedAPI.Service.Models;
 
 namespace SafenedAPI.Controllers
 {
@@ -51,7 +52,7 @@ namespace SafenedAPI.Controllers
         [HttpGet("user/{id:guid}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public ActionResult<BankAccount> GetAccountList(Guid id)
+        public ActionResult<BankAccountModel> GetAccountList(Guid id)
         {
             var accounts = bankAccountService.GetBankAccountListByUser(id);
             if (accounts != null && accounts.Count > 0)
