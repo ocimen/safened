@@ -12,11 +12,13 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
+using AutoMapper;
 using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using SafenedAPI.Data;
 using SafenedAPI.Data.Repository;
 using SafenedAPI.Service;
+using SafenedAPI.Service.Mappings;
 
 namespace SafenedAPI
 {
@@ -39,6 +41,13 @@ namespace SafenedAPI
             {
                 x.RegisterValidatorsFromAssembly(typeof(Startup).Assembly);
             });
+
+            var mappingConfig = new MapperConfiguration(mc => {
+                mc.AddProfile(new MappingProfile());
+            });
+            IMapper mapper = mappingConfig.CreateMapper();
+            services.AddSingleton(mapper);
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "SafenedAPI", Version = "v1" });

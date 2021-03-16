@@ -44,14 +44,9 @@ namespace SafenedAPI.Service
 
         public List<BankAccountModel> GetBankAccountListByUser(Guid userId)
         {
-            //TODO: Add automapper to return dto instead of domain object
             var bankAccountList = bankAccountRepository.GetBankAccountListByUser(userId);
-            return bankAccountList.Select(s => new BankAccountModel
-            {
-                AccountOwner = $"{s.User.FirstName} {s.User.LastName}",
-                Balance = s.Balance,
-                BankName = s.Bank.Name
-            }).ToList();
+            var result = _mapper.Map<List<BankAccountModel>>(bankAccountList);
+            return result;
         }
 
         public bool Delete(Guid id)
